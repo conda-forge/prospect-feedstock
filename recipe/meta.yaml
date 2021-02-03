@@ -1,5 +1,5 @@
 {% set name = "prospect" %}
-{% set version = "0.0.1" %}
+{% set version = "0.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/prospect-{{ version }}.tar.gz
-  sha256: 5373b335d6c64c5efa8d53115107ab7fe49046b98bc04dd4271c9ed109a4450f
+  sha256: 62f28c83a852ee01779cfdbfb3063f069a179f01fce72f6517093c956abe66e5
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
   run:
     - geopandas
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - python >=3.6
